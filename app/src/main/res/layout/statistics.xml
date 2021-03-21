@@ -60,7 +60,6 @@
                 android:layout_gravity="center"
                 android:padding="3sp"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
                 />
 
         </LinearLayout>
@@ -74,10 +73,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="신청 인원: 40 / 30"
+                android:text="신청인원: 40/30"
                 android:id="@+id/coursePersonnel"
                 android:layout_gravity="center"
-                android:padding="3sp"
+                android:padding="2sp"
                 android:textColor="#000000"
                 android:textColorHint="#ffffff"
                 />
@@ -85,12 +84,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="경쟁률 : 133%"
+                android:text="경쟁률: 133%"
                 android:id="@+id/courseRate"
                 android:layout_gravity="center"
-                android:padding="3sp"
-                android:textColor="@color/colorDanger"
-                android:textColorHint="#ffffff"
+                android:padding="2sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
                 />
 
         </LinearLayout>
