@@ -105,7 +105,6 @@ public class StatisticsFragment extends Fragment {
         rankList = new ArrayList<Course>();
         rankListAdapter = new RankListAdapter(getContext().getApplicationContext(), rankList, this);
         rankListView.setAdapter(rankListAdapter);
-        new ByEntire().execute();
         rankSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -116,7 +115,8 @@ public class StatisticsFragment extends Fragment {
                 }
                 else if(rankSpinner.getSelectedItem().equals("우리과에서"))
                 {
-
+                    rankList.clear();
+                    new ByMyMajor().execute();
                 }
                 else if(rankSpinner.getSelectedItem().equals("남자 선호도"))
                 {
@@ -130,11 +130,13 @@ public class StatisticsFragment extends Fragment {
                 }
                 else if(rankSpinner.getSelectedItem().equals("전공 인기도"))
                 {
-
+                    rankList.clear();
+                    new ByMajor().execute();
                 }
                 else if(rankSpinner.getSelectedItem().equals("교양 인기도"))
                 {
-
+                    rankList.clear();
+                    new ByRefinement().execute();
                 }
             }
 
@@ -143,6 +145,237 @@ public class StatisticsFragment extends Fragment {
 
             }
         });
+    }
+
+    class ByMyMajor extends AsyncTask<Void, Void, String>
+    {
+        String target;
+
+        @Override
+        protected void onPreExecute(){
+            try{
+                target = "http://sungsikyang92.cafe24.com/ByMyMajor.php?userID=" + URLEncoder.encode(MainActivity.userID, "UTF-8");
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+            try{
+                URL url = new URL(target);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                String temp;
+                StringBuilder stringBuilder = new StringBuilder();
+                while((temp = bufferedReader.readLine()) != null)
+                {
+                    stringBuilder.append(temp + "\n");
+                }
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return stringBuilder.toString().trim();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        public void onProgressUpdate(Void... values){
+            super.onProgressUpdate();
+        }
+
+        @Override
+        public void onPostExecute(String result){
+            try{
+                JSONObject jsonObject = new JSONObject(result);
+                JSONArray jsonArray = jsonObject.getJSONArray("response");
+                int count = 0;
+                int courseID;
+                String courseGrade;
+                String courseTitle;
+                String courseProfessor;
+                int courseCredit;
+                int courseDivide;
+                int coursePersonnel;
+                String courseTime;
+                while(count < jsonArray.length())
+                {
+                    JSONObject object = jsonArray.getJSONObject(count);
+                    courseID = object.getInt("courseID");
+                    courseGrade = object.getString("courseGrade");
+                    courseTitle = object.getString("courseTitle");
+                    courseProfessor = object.getString("courseProfessor");
+                    courseCredit = object.getInt("courseCredit");
+                    courseDivide = object.getInt("courseDivide");
+                    coursePersonnel = object.getInt("coursePersonnel");
+                    courseTime = object.getString("courseTime");
+                    rankList.add(new Course(courseID, courseGrade, courseTitle, courseProfessor, courseCredit, courseDivide, coursePersonnel, courseTime));
+                    count++;
+                }
+                rankListAdapter.notifyDataSetChanged();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    class ByMajor extends AsyncTask<Void, Void, String>
+    {
+        String target;
+
+        @Override
+        protected void onPreExecute(){
+            try{
+                target = "http://sungsikyang92.cafe24.com/ByMajor.php?userID=" + URLEncoder.encode(MainActivity.userID, "UTF-8");
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+            try{
+                URL url = new URL(target);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                String temp;
+                StringBuilder stringBuilder = new StringBuilder();
+                while((temp = bufferedReader.readLine()) != null)
+                {
+                    stringBuilder.append(temp + "\n");
+                }
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return stringBuilder.toString().trim();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        public void onProgressUpdate(Void... values){
+            super.onProgressUpdate();
+        }
+
+        @Override
+        public void onPostExecute(String result){
+            try{
+                JSONObject jsonObject = new JSONObject(result);
+                JSONArray jsonArray = jsonObject.getJSONArray("response");
+                int count = 0;
+                int courseID;
+                String courseGrade;
+                String courseTitle;
+                String courseProfessor;
+                int courseCredit;
+                int courseDivide;
+                int coursePersonnel;
+                String courseTime;
+                while(count < jsonArray.length())
+                {
+                    JSONObject object = jsonArray.getJSONObject(count);
+                    courseID = object.getInt("courseID");
+                    courseGrade = object.getString("courseGrade");
+                    courseTitle = object.getString("courseTitle");
+                    courseProfessor = object.getString("courseProfessor");
+                    courseCredit = object.getInt("courseCredit");
+                    courseDivide = object.getInt("courseDivide");
+                    coursePersonnel = object.getInt("coursePersonnel");
+                    courseTime = object.getString("courseTime");
+                    rankList.add(new Course(courseID, courseGrade, courseTitle, courseProfessor, courseCredit, courseDivide, coursePersonnel, courseTime));
+                    count++;
+                }
+                rankListAdapter.notifyDataSetChanged();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    class ByRefinement extends AsyncTask<Void, Void, String>
+    {
+        String target;
+
+        @Override
+        protected void onPreExecute(){
+            try{
+                target = "http://sungsikyang92.cafe24.com/ByRefinement.php?userID=" + URLEncoder.encode(MainActivity.userID, "UTF-8");
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+            try{
+                URL url = new URL(target);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                String temp;
+                StringBuilder stringBuilder = new StringBuilder();
+                while((temp = bufferedReader.readLine()) != null)
+                {
+                    stringBuilder.append(temp + "\n");
+                }
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return stringBuilder.toString().trim();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        public void onProgressUpdate(Void... values){
+            super.onProgressUpdate();
+        }
+
+        @Override
+        public void onPostExecute(String result){
+            try{
+                JSONObject jsonObject = new JSONObject(result);
+                JSONArray jsonArray = jsonObject.getJSONArray("response");
+                int count = 0;
+                int courseID;
+                String courseGrade;
+                String courseTitle;
+                String courseProfessor;
+                int courseCredit;
+                int courseDivide;
+                int coursePersonnel;
+                String courseTime;
+                while(count < jsonArray.length())
+                {
+                    JSONObject object = jsonArray.getJSONObject(count);
+                    courseID = object.getInt("courseID");
+                    courseGrade = object.getString("courseGrade");
+                    courseTitle = object.getString("courseTitle");
+                    courseProfessor = object.getString("courseProfessor");
+                    courseCredit = object.getInt("courseCredit");
+                    courseDivide = object.getInt("courseDivide");
+                    coursePersonnel = object.getInt("coursePersonnel");
+                    courseTime = object.getString("courseTime");
+                    rankList.add(new Course(courseID, courseGrade, courseTitle, courseProfessor, courseCredit, courseDivide, coursePersonnel, courseTime));
+                    count++;
+                }
+                rankListAdapter.notifyDataSetChanged();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
     }
 
     class ByFemale extends AsyncTask<Void, Void, String>
