@@ -121,7 +121,7 @@
                 <RadioButton
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
-                    android:text="여성"
+                    android:text="여자"
                     android:id="@+id/genderWoman"
                     android:layout_weight="1"
                     android:checked="true"/>
@@ -129,7 +129,7 @@
                 <RadioButton
                     android:layout_width="0sp"
                     android:layout_height="wrap_content"
-                    android:text="남성"
+                    android:text="남자"
                     android:id="@+id/genderMan"
                     android:layout_weight="1"/>
 
