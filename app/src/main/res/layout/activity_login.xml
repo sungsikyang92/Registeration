@@ -109,7 +109,8 @@
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
                 android:text="@string/string6"
-                android:id="@+id/registerButton"/>
+                android:id="@+id/registerButton"
+                android:textColor="@color/colorPrimaryDark"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -119,12 +120,15 @@
                 android:paddingBottom="10sp">
 
                 <TextView
+                    android:drawableStart="@drawable/ic_baseline_live_help_24"
+                    android:drawableLeft="@drawable/ic_baseline_live_help_24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textSize="15sp"
-                    android:text="어플리케이션 정보"
-                    android:id="@+id/information"/>
+                    android:text=" 어플리케이션 정보"
+                    android:id="@+id/information"
+                    android:textColor="@color/colorPrimaryDark"/>
 
             </LinearLayout>
 

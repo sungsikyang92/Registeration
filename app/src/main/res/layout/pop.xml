@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어플리케이션 정보"
+        android:drawableStart="@drawable/ic_baseline_live_help_24"
+        android:drawableLeft="@drawable/ic_baseline_live_help_24"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="5sp"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="어플리케이션 버전 : 0.1 Ver"
+        android:drawableStart="@drawable/ic_baseline_build_24"
+        android:drawableLeft="@drawable/ic_baseline_build_24"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:padding="5sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="개발자 : 양성식(앵송식식식)"
+        android:drawableStart="@drawable/ic_baseline_security_24"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:padding="5sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="깃허브 : https://github.com/sungsikyang92"
+        android:drawableStart="@drawable/ic_baseline_public_24"
+        android:drawableLeft="@drawable/ic_baseline_public_24"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:padding="5sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="15sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="그룹 앵송식 운영진 소개 "
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:padding="5sp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="15sp"
+                    android:orientation="horizontal">
+
+                    <com.example.registeration.CircleImageView
+                        android:src="@drawable/admin"
+                        android:id="@+id/imageView"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="2sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="양성식"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="뉴욕주립대 졸업생"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="sungsik.yang92@gmail.com"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="개발자되고싶다"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWinnder"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="15sp"
+                    android:orientation="horizontal">
+
+                    <com.example.registeration.CircleImageView
+                        android:src="@drawable/guest1"
+                        android:id="@+id/imageView2"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="2sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="최띵욱"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="노예1번"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="끼룪끼"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ㅎㅇㅎㅇㅎㅇ "
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWinnder"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
