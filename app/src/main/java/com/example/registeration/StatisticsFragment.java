@@ -83,6 +83,10 @@ public class StatisticsFragment extends Fragment {
     private ArrayAdapter rankAdapter;
     private Spinner rankSpinner;
 
+    private ListView rankListView;
+    private RankListAdapter rankListAdapter;
+    private List<Course> rankList;
+
     @Override
     public void onActivityCreated(Bundle b){
         super.onActivityCreated(b);
@@ -94,8 +98,14 @@ public class StatisticsFragment extends Fragment {
         totalCredit = 0;
         credit = (TextView) getView().findViewById(R.id.totalCredit);
         rankSpinner = (Spinner) getView().findViewById(R.id.rankSpinner);
-        rankAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.rank, android.R.layout.simple_spinner_dropdown_item);
+        rankAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.rank, R.layout.spinner_item);
         rankSpinner.setAdapter(rankAdapter);
+        rankSpinner.setPopupBackgroundResource(R.color.colorPrimary);
+        rankListView = (ListView) getView().findViewById(R.id.rankListView);
+        rankList = new ArrayList<Course>();
+        rankListAdapter = new RankListAdapter(getContext().getApplicationContext(), rankList, this);
+        rankListView.setAdapter(rankListAdapter);
+        new ByEntire().execute();
         rankSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -130,6 +140,83 @@ public class StatisticsFragment extends Fragment {
 
             }
         });
+    }
+
+    class ByEntire extends AsyncTask<Void, Void, String>
+    {
+        String target;
+
+        @Override
+        protected void onPreExecute(){
+            try{
+                target = "http://sungsikyang92.cafe24.com/ByEntire.php";
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+            try{
+                URL url = new URL(target);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                String temp;
+                StringBuilder stringBuilder = new StringBuilder();
+                while((temp = bufferedReader.readLine()) != null)
+                {
+                    stringBuilder.append(temp + "\n");
+                }
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return stringBuilder.toString().trim();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        public void onProgressUpdate(Void... values){
+            super.onProgressUpdate();
+        }
+
+        @Override
+        public void onPostExecute(String result){
+            try{
+                JSONObject jsonObject = new JSONObject(result);
+                JSONArray jsonArray = jsonObject.getJSONArray("response");
+                int count = 0;
+                int courseID;
+                String courseGrade;
+                String courseTitle;
+                String courseProfessor;
+                int courseCredit;
+                int courseDivide;
+                int coursePersonnel;
+                String courseTime;
+                while(count < jsonArray.length())
+                {
+                    JSONObject object = jsonArray.getJSONObject(count);
+                    courseID = object.getInt("courseID");
+                    courseGrade = object.getString("courseGrade");
+                    courseTitle = object.getString("courseTitle");
+                    courseProfessor = object.getString("courseProfessor");
+                    courseCredit = object.getInt("courseCredit");
+                    courseDivide = object.getInt("courseDivide");
+                    coursePersonnel = object.getInt("coursePersonnel");
+                    courseTime = object.getString("courseTime");
+                    rankList.add(new Course(courseID, courseGrade, courseTitle, courseProfessor, courseCredit, courseDivide, coursePersonnel, courseTime));
+                    count++;
+                }
+                rankListAdapter.notifyDataSetChanged();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
     }
 
     class BackgroundTask extends AsyncTask<Void, Void, String>

@@ -4,8 +4,8 @@
     android:layout_height="wrap_content" android:orientation="horizontal">
 
     <Button
-        android:layout_width="70sp"
-        android:layout_height="40sp"
+        android:layout_width="60sp"
+        android:layout_height="35sp"
         android:layout_gravity="center"
         android:gravity="center"
         android:text="삭제"
@@ -13,9 +13,9 @@
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:id="@+id/deleteButton"
-        android:layout_marginRight="10sp"
+        android:layout_marginRight="5sp"
         android:layout_marginLeft="5sp"
-
+        android:padding="0sp"
         />
 
     <LinearLayout

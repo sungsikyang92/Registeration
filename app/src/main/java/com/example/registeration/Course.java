@@ -18,6 +18,17 @@ public class Course {
     String courseRoom;	//강의실
     int courseRival;    //강의 경쟁자 수
 
+    public Course(int courseID, String courseGrade, String courseTitle, String courseProfessor, int courseCredit, int courseDivide, int coursePersonnel, String courseTime) {
+        this.courseID = courseID;
+        this.courseGrade = courseGrade;
+        this.courseTitle = courseTitle;
+        this.courseProfessor = courseProfessor;
+        this.courseCredit = courseCredit;
+        this.courseDivide = courseDivide;
+        this.coursePersonnel = coursePersonnel;
+        this.courseTime = courseTime;
+    }
+
     public Course(int courseID, String courseGrade, String courseTitle, int courseDivide, int coursePersonnel, int courseRival) {
         this.courseID = courseID;
         this.courseGrade = courseGrade;
