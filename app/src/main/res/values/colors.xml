@@ -12,4 +12,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorWarning">#ED00CB</color>
     <color name="colorGray">#8C8C8C</color>
+    <color name="colorDanger">#8324FF</color>
+    <color name="colorRed">#FF1212</color>
+    <color name="colorSafe">#08C904</color>
 </resources>
