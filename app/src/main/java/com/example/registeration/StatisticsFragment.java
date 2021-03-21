@@ -8,7 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -77,6 +80,9 @@ public class StatisticsFragment extends Fragment {
     public static int totalCredit = 0;
     public static TextView credit;
 
+    private ArrayAdapter rankAdapter;
+    private Spinner rankSpinner;
+
     @Override
     public void onActivityCreated(Bundle b){
         super.onActivityCreated(b);
@@ -87,6 +93,43 @@ public class StatisticsFragment extends Fragment {
         new BackgroundTask().execute();
         totalCredit = 0;
         credit = (TextView) getView().findViewById(R.id.totalCredit);
+        rankSpinner = (Spinner) getView().findViewById(R.id.rankSpinner);
+        rankAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.rank, android.R.layout.simple_spinner_dropdown_item);
+        rankSpinner.setAdapter(rankAdapter);
+        rankSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if(rankSpinner.getSelectedItem().equals("전체에서"))
+                {
+
+                }
+                else if(rankSpinner.getSelectedItem().equals("우리과에서"))
+                {
+
+                }
+                else if(rankSpinner.getSelectedItem().equals("남자 선호도"))
+                {
+
+                }
+                else if(rankSpinner.getSelectedItem().equals("여자 선호도"))
+                {
+
+                }
+                else if(rankSpinner.getSelectedItem().equals("전공 인기도"))
+                {
+
+                }
+                else if(rankSpinner.getSelectedItem().equals("교양 인기도"))
+                {
+
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
     class BackgroundTask extends AsyncTask<Void, Void, String>
