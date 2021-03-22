@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
 import androidx.appcompat.app.AppCompatActivity;
 

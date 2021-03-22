@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;

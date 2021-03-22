@@ -1,9 +1,6 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
 import android.content.Context;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class Schedule {
 

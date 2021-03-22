@@ -1,8 +1,7 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.os.AsyncTask;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -15,16 +14,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLEncoder;
-import java.util.ArrayList;
 import java.util.List;
 
 public class StatisticsCourseListAdapter extends BaseAdapter {

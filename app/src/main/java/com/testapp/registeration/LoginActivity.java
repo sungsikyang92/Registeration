@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,14 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 public class LoginActivity extends AppCompatActivity {
 

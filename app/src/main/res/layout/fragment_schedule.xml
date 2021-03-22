@@ -106,7 +106,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -121,7 +121,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -135,7 +135,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -149,7 +149,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -163,7 +163,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -197,7 +197,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -212,7 +212,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -226,7 +226,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -240,7 +240,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -254,7 +254,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -288,7 +288,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -303,7 +303,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -317,7 +317,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -331,7 +331,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -345,7 +345,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -379,7 +379,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -394,7 +394,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -408,7 +408,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -422,7 +422,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -436,7 +436,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -470,7 +470,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -485,7 +485,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -499,7 +499,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -513,7 +513,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -527,7 +527,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -561,7 +561,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -576,7 +576,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -590,7 +590,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -604,7 +604,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -618,7 +618,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -652,7 +652,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -667,7 +667,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -681,7 +681,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -695,7 +695,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -709,7 +709,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -743,7 +743,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -758,7 +758,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -772,7 +772,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -786,7 +786,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -800,7 +800,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -834,7 +834,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -849,7 +849,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -863,7 +863,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -877,7 +877,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -891,7 +891,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -925,7 +925,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -940,7 +940,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -954,7 +954,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -968,7 +968,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -982,7 +982,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1016,7 +1016,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1031,7 +1031,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1045,7 +1045,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1059,7 +1059,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1073,7 +1073,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1107,7 +1107,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1122,7 +1122,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1136,7 +1136,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1150,7 +1150,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1164,7 +1164,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1198,7 +1198,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1213,7 +1213,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1227,7 +1227,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1241,7 +1241,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1255,7 +1255,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1289,7 +1289,7 @@
                 android:paddingRight="1sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="월"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1304,7 +1304,7 @@
                 android:textSize="15sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="화"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1318,7 +1318,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="수"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1332,7 +1332,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="목"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1346,7 +1346,7 @@
                 android:padding="2sp"
                 />
 
-            <com.example.registeration.AutoResizeTextView
+            <com.testapp.registeration.AutoResizeTextView
                 android:text="금"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

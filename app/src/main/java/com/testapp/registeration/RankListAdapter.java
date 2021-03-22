@@ -1,21 +1,12 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
-
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.List;
 

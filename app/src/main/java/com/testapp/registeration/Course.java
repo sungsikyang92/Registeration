@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
 public class Course {
 

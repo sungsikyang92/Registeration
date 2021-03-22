@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
 import android.content.Context;
 import android.text.Layout.Alignment;

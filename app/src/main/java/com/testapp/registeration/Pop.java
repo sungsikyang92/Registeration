@@ -1,9 +1,8 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.Display;
 
 import androidx.annotation.Nullable;
 

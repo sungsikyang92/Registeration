@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.testapp.registeration;
 
 import android.app.AlertDialog;
 import android.content.Context;
